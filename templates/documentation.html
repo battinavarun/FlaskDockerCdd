@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Documentation - FlaskSync</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f5f6fa;
+      color: #2d3436;
+    }
+
+    .navbar {
+      background-color: #fff;
+      padding: 1rem 2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .logo {
+      color: #6c5ce7;
+      font-weight: 700;
+      font-size: 1.5rem;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+    }
+
+    .nav-links li {
+      margin-left: 2rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #2d3436;
+      font-weight: 500;
+      position: relative;
+    }
+
+    .nav-links a:hover {
+      color: #6c5ce7;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 120px auto 60px;
+      padding: 2rem;
+      background-color: #ffffff;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      border-radius: 12px;
+    }
+
+    h1 {
+      color: #6c5ce7;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      color: #2d3436;
+      margin-top: 2rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+
+    code {
+      background-color: #f1f2f6;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+
+    pre {
+      background: #f1f2f6;
+      padding: 1rem;
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #888;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-content">
+      <a href="/" class="logo">⚡ FlaskSync</a>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/#features">Features</a></li>
+        <li><a href="/documentation">Documentation</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>📘 Project Documentation</h1>
+    <p>This document provides an overview of the architecture, setup, and deployment of your Flask Docker app.</p>
+
+    <h2>📁 Project Structure</h2>
+    <pre>
+flask-docker-app/
+├── app.py
+├── requirements.txt
+├── Dockerfile
+├── templates/
+│   ├── index.html
+│   └── documentation.html
+    </pre>
+
+    <h2>⚙️ Requirements</h2>
+    <ul>
+      <li>Python 3.9+</li>
+      <li>Flask 2.2.2</li>
+      <li>Werkzeug 2.2.3</li>
+      <li>Docker</li>
+    </ul>
+
+    <h2>🚀 Running Locally</h2>
+    <pre><code>python -m venv venv
+source venv/bin/activate  # or venv\Scripts\activate on Windows
+pip install -r requirements.txt
+python app.py
+</code></pre>
+
+    <h2>🐳 Docker Deployment</h2>
+    <pre><code>docker build -t flask-docker-app .
+docker run -d -p 5000:5000 flask-docker-app
+</code></pre>
+
+    <h2>🌍 Live Deployment (Render)</h2>
+    <p>Push your project to GitHub, connect it to Render, and deploy with Docker using your Dockerfile.</p>
+
+    <h2>📞 Contact</h2>
+    <p>For more support, reach out via the Contact section or raise an issue on the project GitHub page.</p>
+  </div>
+
+  <footer>
+    &copy; 2025 FlaskSync Platform. All rights reserved.
+  </footer>
+</body>
+</html>
